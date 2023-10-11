@@ -1,0 +1,120 @@
+header {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+header div.wrap {
+  margin-bottom: 15px;
+}
+header div.wrap nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div.wrap nav h1 {
+
+}
+header div.wrap nav h1 a {
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 115px;
+  height: 46px;
+  font-size: 0;
+}
+header div.wrap nav h1 a span {
+
+}
+header div.wrap nav ul {
+  font-weight: bold;
+}
+header div.wrap nav ul li {
+  font-size: 17px;
+  margin-top: 30px;
+}
+header div.wrap nav ul li a {
+  font-size: 17px;
+}
+header div.wrap nav ul.gnb{  
+  padding-right: 90px;
+  margin-bottom: 10px;
+}
+header div.wrap nav ul.gnb li{
+  
+}
+header div.wrap nav ul.gnb li a{
+  padding-right: 33px;
+  font-weight: 700;
+}
+header div.wrap nav div {
+  
+}
+header div.wrap nav div.wsub1{
+  
+}
+header div.wrap nav div ul {
+  
+}
+header div.wrap nav div ul.wsublist{
+  
+}
+header div.wrap nav div ul li {
+  
+}
+header div.wrap nav div ul li a {
+  font-size: 14px;
+  margin-right: 25px;
+}
+header div.wrap nav div ul li a.down{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 2;
+  margin-right: 5px;
+}
+header div.wrap nav div ul li a.apply{
+  background-color: #DC000C;
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 2;
+}
+header div.wrap nav div form {
+  position: absolute;
+  right: 378px;
+}
+header div.wrap nav div form a{
+  font-size: 14px;
+  color: #666;
+  padding: 0 8px;
+  display: inline-block;
+  border-right: 1px solid #666;
+}
+header div.wrap nav div form a.join{
+  border-right: none;
+}
+header div.wrap nav div form button.search {
+  background-image: url(../img/search.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 25px;
+  background-color: transparent;
+  font-size: 0;
+  border: none;
+  vertical-align: 5px;
+  margin-right: 20px;
+}
+
+
+
+

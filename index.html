@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canon 캐논코리아 주식회사_copy</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/wgnb.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/solution.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <link rel="stylesheet" href="css/pro.css">
+    <link rel="stylesheet" href="css/stockir.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gasoek+One&family=Noto+Sans+KR:wght@300;400;500;700;800;900&family=Tilt+Prism&display=swap" rel="stylesheet"> 
+    <!-- 제이쿼리연결 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/menuanimate.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //상단슬라이드
+            $("header div.wrap nav ul.gnb li").mouseenter(function(){
+                $("div .wgnb").slideDown();
+            });
+            //타이틀슬라이드
+            $("div#title").mouseenter(function(){
+                $("div.wgnb").slideUp();
+            });
+            $("header div.wrap nav ul.gnb li a").mouseenter(function(){
+                $("header div.wrap nav div.wsub1").show();
+            });
+            // footer button 슬라이드
+            $(".footer_sitemap .wrap .familywrap .select button.btnselect").click(function(){
+                if (!$(this).hasClass('on')) {
+                    $('.selectlist').siblings('.btnselect').removeClass('on');
+                    $('.selectlist').hide();
+                    $(this).addClass('on');
+                    $(this).siblings('.selectlist').show();
+                } else if ($(this).hasClass('on')) {
+                    $(this).removeClass('on');
+                    $(this).siblings('.selectlist').hide();
+                }
+            }); 
+        });
+    </script>
+     <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            AOS.init();
+        });
+    </script>
+</head>
+<body>
+    <!-- 상단영역 -->
+    <header>
+        <div class="wrap">
+            <nav>
+                <h1><a href="">캐논코리아 주식회사</a>
+                </h1>
+                <ul class="gnb flex">
+                    <li><a href="">컨슈머</a></li>
+                    <li><a href="">비즈니스</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">이벤트</a></li>
+                </ul>
+                <div class="flex">
+                    <ul class="lang flex">
+                        <li><a href="">C Logue</a></li>
+                        <li><a href="">고객지원</a></li>
+                        <li><a href="">e스토어</a></li>
+                        <li><a href="">아카데미</a></li>
+                        <li><a href="" class="down">다운로드센터</a></li>
+                        <li><a href="" class="apply">정품등록</a></li>
+                    </ul>
+                    <form action="">
+                        <button class="search">검색</button>
+                        <a href="" class="login">로그인</a>
+                        <a href="" class="join">회원가입</a>
+                    </form>
+                </div>
+                <div class="wgnb">
+                    <div class="wrap">
+                        <div class="center flex">
+                            <div class="wsub1">
+                                <h2 class="hide"><a href="#">컨슈머</a></h2>
+                                <ul class="wsublist text-center">
+                                    <li><a href="#">컨슈머 제품</a></li>
+                                    <li><a href="#">프로</a></li>
+                                    <li><a href="#">C Logue</a></li>
+                                    <li><a href="#">라운지</a></li>
+                                    <li><a href="#">매장 안내</a></li>
+                                </ul>
+                            </div>
+                            <div class="wsub2">
+                                <h2 class="hide"><a href="#">비즈니스</a></h2>
+                                <ul class="wsublist text-center">
+                                    <li><a href="#">비즈니스 제품</a></li>
+                                    <li><a href="#">제품구입/지원</a></li>
+                                    <li><a href="#">매장안내</a></li>
+                                    <li><a href="#">비즈몰↗</a></li>
+                                    <li><a href="#">파트너웹↗</a></li>
+                                </ul>
+                            </div>
+                            <div class="wsub3">
+                                <h2 class="hide"><a href="#">회사소개</a></h2>
+                                <ul class="wsublist text-center">
+                                    <li><a href="#">캐논코리아</a></li>
+                                    <li><a href="#">일반현황</a></li>
+                                    <li><a href="#">경영정보</a></li>
+                                    <li><a href="#">윤리경영</a></li>
+                                    <li><a href="#">지속가능경형</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">브랜드 소식</a></li>
+                                    <li><a href="#">정품사용 캠페인</a></li>
+                                </ul>
+                            </div>
+                            <div class="wsub4">
+                                <h2 class="hide"><a href="#">이벤트</a></h2>
+                                <ul class="wsublist text-center">
+                                    <li><a href="#">진행중인 이벤트</a></li>
+                                    <li><a href="#">종료된 이벤트</a></li>
+                                    <li><a href="#">당첨자 발표</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- 타이틀 영역 -->
+    <div id="title">
+        <div class="wrap flex flex-column flex-center">
+            <hgroup>
+                <h3><a href="">최대 40만원 상당 혜택!</a></h3>
+                <h2><a href="">캐논 썸머페스타<br />정품등록 이벤트</a></h2>
+            </hgroup>
+            <a href="" class="more">더 알아보기</a>
+            <span class="control">
+                <button class="prev">이전보기</button>
+                <button class="next">다음보기</button>
+            </span>
+            <ul class="list">
+                <li><a href="">존경받는<br />기업1위</a></li>
+                <li><a href="">미니멀라이프 시작!<br />북스캐너 R40</a></li>
+                <li><a href="">파워샷 V10<br />정식 출시</a></li>
+                <li><a href="">캐논 썸머페스타<br />정품등록 이벤트</a></li>
+                <li><a href="">캐논이 다~알아서<br />R50</a></li>
+                <li><a href="">iR ADV DX 4800<br />series</a></li>
+                <li><a href="">EOS R5C<br />프로모션</a></li>
+                <li><a href="">C Logue<br />시즌 오프 프로모션</a></li>
+                <li><a href="">QX110<br />프로모션</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 내용영역 -->
+    <main>
+        <section id="solution">
+            <div class="wrap">
+                <div class="solutiontitle">
+                    <h2 class="h2">Total Imaging Solution</h2>
+                </div>
+                <div class="contlist">
+                    <div class="contlist1" data-aos="fade-up">
+                        <div class="img">
+                            <a href="">
+                                <img src="img/ma1.jpg" alt="무한 포토프린터 사진 ">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="txt">
+                                <p>캐논의 새로운 고품질<br />무한 포토 프린터</p>
+                            </div>
+                            <div class="info">
+                                <a href="">무한 잉크젯</a>
+                                <a href="">G-Series</a>
+                                <a href="">포토프린터</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contlist1" data-aos="fade-up">
+                        <div class="img">
+                            <a href="">
+                                <img src="img/ma3.jpg" alt="독보적 초경량 풀프레임의 탄생">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="txt">
+                                <p>독보적 초경량 풀프레임의 탄생</p>
+                            </div>
+                            <div class="info">
+                                <a href="">EOS R8</a>
+                                <a href="">풀프레임 미러리스</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contlist1" data-aos="fade-up">
+                        <div class="img">
+                            <a href="">
+                                <img src="img/ma2.jpg" alt="캐논 PowerShot PICK 카메라">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="txt">
+                                <p>나만의 포토그래퍼,<br />캐논 PowerShot PICK 카메라!</p>
+                            </div>
+                            <div class="info">
+                                <a href="">PowerShot PICK</a>
+                                <a href="">컴팩트 카메라</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contlist1" data-aos="fade-up">
+                        <div class="img">
+                            <a href="">
+                                <img src="img/ma4.png" alt="컬러 디지털 인쇄기">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="txt">
+                                <p>뛰어난 색감 실현, 생산성 높은<br />컬러 디지털 인쇄기</p>
+                            </div>
+                            <div class="info">
+                                <a href="">imagePRESS V1000</a>
+                                <a href="">디지털 인쇄기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contlist1" data-aos="fade-up">
+                        <div class="img">
+                            <a href="">
+                                <img src="img/ma5.jpg" alt="컬러 디지털 인쇄기">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="txt">
+                                <p>디지털트랜스포메이션 오피스를<br />선도하다.</p>
+                            </div>
+                            <div class="info">
+                                <a href="">iR ADV DX Series</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contents">                    
+            <div class="wrap flex flex-center flex-column padding100 full" >
+                <div class="co flex flex-center">
+                    <div class="text">
+                        <h2 class="h4">NEW & HOT</h2>
+                        <h3 class="h2">가장 인기있는 제품</h3>
+                        <a href=""class="morei"><span>더 알아보기</span></a>
+                    </div>
+                    <ul class="mo"  data-aos="fade-up">
+                        <li>
+                            <a href="">
+                                <p>압도적인 하이브리드 잉크젯 시스템</p>
+                                <h3>캐논 복합기의 혁명<br />무한잉크젯 G-Series</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="ma flex flex-center"  data-aos="fade-up">
+                    <li>
+                        <a href="">
+                            <p> 크리에이터를 위한 초경량 카메라<br />
+                                퍼펙트 퀄리티 매니저</p>
+                            <h3>EOS R50</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p> 디지털트랜스포메이션 오피스,<br />
+                                새로운 스마트 오피스 환경을 실현하다</p>
+                            <h3>imageRUNNER ADVANCE DX Series</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p> 완전히 새로운 형태의 VR 영상 제작 장비</p>
+                            <h3>RF 5.2mm F2.8L<br />
+                            DUAL FISHEYE</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="pro">
+            <div class="wrap lex flex-center paddingT100 paddingB100">
+                <h2 class="hide">제품</h2>
+                <div class="prolist">
+                    <ul class="prod">
+                        <li>
+                            <a href="">
+                                <h3 class="h4">프로</h3>
+                                <p>캐논코리아는 다양한 영역에서 활동하는 프로페셔널들의 활동을 지원하고<br />협업 하고 있습니다.</p>
+                                <figure>
+                                    <img src="img/p1.png" alt="프로">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3 class="h4">Creative Park</h3>
+                                <p>실생활에 활용 가능한 근사한 작품을 만들어 보세요.</p>
+                                <figure>
+                                    <img src="img/p2.png" alt="Creative Park">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3 class="h4">Rchive</h3>
+                                <p>EOS R System의 모든 것을 한 자리에서 확인할 수 있습니다.</p>
+                                <figure>
+                                    <img src="img/p3.png" alt="Rchive">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3 class="h4">E-카탈로그</h3>
+                                <p>캐논의 다양한 제품을 더 자세히 알아보려면 온라인 제품 안내서를<br /> 다운 받아보세요.</p>
+                                <figure>
+                                    <img src="img/p4.png" alt="E-카탈로그">
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h3 class="h4">SAON</h3>
+                                <p> SAON은 캐논코리아가 제공하는 Medical Total Solution 브랜드입니다.<br />
+                                    <span>SAON 소개 SAON 메디몰</span></p>
+                                <figure>
+                                    <img src="img/p5.png" alt="SAON">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="stockir">
+            <div class="wrap flex flex-center flex-column paddingB100 paddingT100 ">
+                <article>
+                    <h2 class="h4"><a href="">공지사항</a></h2>
+                    <ul class="stockirlist">
+                        <li>
+                            <a href="">
+                                <p class="tit">2023 미래작가상 공모안내</p>
+                                <p class="txt"> 2023 미래작가상 공모
+                                    □ 미래작가상 소개
+                                    미래작가상은 박건희문화재단과캐논코리아가 주최 주관하는 차세대작가프로그램으로 사진·영상 작업을공모하여 5인의 수상자를선정합니다. 5인의 수상자들은 캐논풀프레임 미러리스 카메라와 렌즈를제공받습니다. 수상작가는사진가와의 1:1 튜터링과 오형근사진가와의 마스터 튜터링을 통해성장한 작업을 2024년캐논갤러리에서 전시합니다.
+                                    올해로 17회를 맞이하는 기업과문화재단이 협업한 성공적인문화사업이고, 해를 거듭하며 청년작가들의 등용문으로 자리잡고있습니다. 역대 수상자 62명 가운데다수의 수상자들은 작가로서국내외에서 활발한 작품 활동을이어가고 있습니다.
+                                    □ 공모
+                                    ■ 대상 : 전국 대학생 (전공 제한없음)
+                                    ■ 공모기간 : 2023년 8월 21일(월)– 8월 28일(월) 24시까지
+                                    ■ 지원내용 : 5인을 선정
+                                    – EOS R6 Mark ll 24-105 USMKIT를 각 수상자에게 수여
+                                    – 심사위원회에서 추천한 작가와의1:1 튜터링, 오형근 사진가와마스터 튜터링
+                                    – 2024년 캐논 갤러리에서 전시(4월 예정)
+                                    – 작품집 출판
+                                    ■ 접수 : miraeaward2023@gmailcom로 전송
+                                    ■ 제출자료
+                                    반드시 2023 미래작가상 제출방법을 숙지 후 제출 → [2023미래작가상 제출 방법 보러가기]
+                                    1. 미발표 포트폴리오
+                                    사진 부문 – 10점 이내의 사진 작업JPG파일
+                                    영상 부문 – 유튜브 URL로 제출
+                                    2. 작업노트 – 양식은 하단에서다운로드
+                                    3. 재학증명서 1부 * 휴학생인 경우휴학증명서
+                                    4. 2023 미래작가상 지원서 –양식은 하단에서 다운로드
+                                    ■ 사진부문 작품 규격 : JPG파일로 1점당 72dpi 2MB 이내의이미지
+                                    ■ 심사 : 2023 미래작가상심사위원회를 구성하여 수상자 5인선정
+                                    1차 심사
+                                    지원자의 제출자료 및 포트폴리오를심사위원회가 심사하여 2차 대상자선발
+                                    2차 심사
+                                    인터뷰 심사를 통해 최종 수상자5인 선정
+                                    – 2차 심사 대상자는 11x14inch포트폴리오(사진부문) 및 영(영상부문)을 준비하여 인터뷰심사에 참석
+                                    ■ 발표 : 심사결과는박건희문화재단 www.geonhi.com 및캐논코리아 홈페이지에 공지
+                                    ■ 기타
+                                    – 응모작의 부적절한 표절 및 그밖의 결격 사항이 있을 때는 입상이취소될 수 있음
+                                    – 수상자는 본 상이 제공하는 모든프로그램 일정에 성실히 참여할의무를 지님
+                                    – 미래작가상의 운영은 본 상의운영 내규에 따름
+                                    ■ 문의
+                                    박건희문화재단 geonhiaf@daum.net으로 문의
+                                </p>
+                                <time>2023-07-31</time>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="tit">홈페이지 서버 보안업데이트 안내</p>
+                                <p class="txt">안녕하세요. 캐논코리아입니다.
+                                    안정적인 서비스 제공과 고객편의를 위하여 홈페이지 서버에대한 보안 업데이트를 진행하오니이용에 참고 부탁드립니다.
+                                    업데이트 진행중에는 홈페이지접속과 서비스 이용이 불가 할 수있습니다.
+                                    이용에 불편을 드려 죄송합니다. 
+                                    - 일시 : 2023.06.25(일) 10:00 ~12:00 (1차)
+                                               2023.07.03(월) 6:30~ 8:00 (업데이트 진행 과정에따라 변경될 수 있습니다) (2차)
+                                    - 내용 : 시스템 보안 업데이트 및점검
+                                    감사합니다.
+                                </p>
+                                <time>2023-06-19</time>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="tit">개인정보 처리 방침개정 안내(2023년 6월 15일 적용)</p>
+                                <p class="txt">안녕하세요.
+                                    캐논코리아 주식회사입니다.
+                                    개인정보처리방침이 2023년 06월15일부로 아래와 같이 변경되어안내드립니다.
+                                    이에 사전 안내 해드리니 개정될내용을 확인해 주시기 바랍니다.
+                                    ■ 주요변경 사항
+                                        1. 개인정보의 자동수집 장치의설치, 운영 및 그 거부에 관한 사항
+                                    #변경 전
+                                     회사는 고객님의 정보를 수시로저장하고 찾아내는 ‘쿠키(cookie)’를 사용합니다. 쿠키란 회사의웹사이트를 운영하는데 이용되는서버가 고객님의 브라우저에 보내는아주 작은 텍스트 파일로, 고객님의컴퓨터 하드디스크에 저장됩니다.
+                                    (1) 쿠키 등 사용 목적
+                                     고객님께서 웹사이트에 접속을하면 고객님의 브라우저에 있는쿠키의 내용을 읽고, 고객님의추가정보를 고객님의 컴퓨터에서찾아 접속에 따른 성명 등의 추가입력 없이 서비스를 제공할 수있습니다. 쿠키는 고객님의컴퓨터는 식별하지만 고객님을개인적으로 식별하지는 않습니다.
+                                    (2) 쿠키 설정 거부 방법
+                                     고객님은 쿠키 설치에 대한선택권을 가지고 있습니다. 따라서웹브라우저에서 옵션을설정함으로써 모든 쿠키를허용하거나, 쿠키가 저장될 때마다확인을 거치거나, 아니면 모든쿠키의 저장을 거부할 수도있습니다. 단, 고객님께서 쿠키설치를 거부하였을 경우 로그인서비스 제공에 어려움이 있을 수있습니다.
+                                    – 쿠키설정 방법 (마이크로소프트엣지 기준) : 웹브라우저 메뉴[설정 및 기타] (Alt+F)> [설정] >[쿠키 및 사이트권한] > [쿠키 및저장된 데이터] 탭에서 설정하시면됩니다.
+                                    – 쿠키설정 거부 방법(마이크로소프트 엣지 기준) :웹브라우저 메뉴 [설정 및 기타](Alt+F)> [설정] > [쿠키 및사이트권한] > [쿠키 및 저장된데이터] > [쿠키 및 사이트 데이터관리 및 삭제] 탭을 클릭하여[사이트에서 쿠키 데이터를저장하고 읽도록 허용(권장)]을OFF하시면 됩니다.
+                                    #변경 후
+                                     회사는 고객님의 정보를 수시로저장하고 찾아내는 ‘쿠키(cookie)’를 사용합니다. 쿠키란 회사의웹사이트를 운영하는데 이용되는서버가 고객님의 브라우저에 보내는아주 작은 텍스트 파일로, 고객님의컴퓨터 하드디스크에 저장됩니다.
+                                    (1) 쿠키 등 사용 목적
+                                     고객님께서 웹사이트에 접속을하면 고객님의 브라우저에 있는쿠키의 내용을 읽고, 고객님의추가정보를 고객님의 컴퓨터에서찾아 접속에 따른 성명 등의 추가입력 없이 서비스를 제공할 수있습니다. 쿠키는 고객님의컴퓨터는 식별하지만 고객님을개인적으로 식별하지는 않습니다.회사는 고객에게 더 나은 서비스를제공하기 위한 목적으로 Google,Inc. (이하 ‘Google’)이 제공하는웹 분석 서비스인 GoogleAnalytics를 사용하여 익명의쿠키정보(인구통계학적 데이터) 등를 수집을 통해 고객들이 회사의서비스를 어떻게 이용하는지 분석및 평가하고 고객의 수요를파악하며, 서비스와 제품을개선하고 맞춤화하여 효율적인서비스를 제공하는 것에 목적이있습니다.
+                                     Google Analytics를 통해수집되는 정보의 처리는 Google개인정보보호정책과 GoogleAnalytics 이용약관을 적용받습니다.
+                                    - Google 개인정보보호정책 :개인정보처리방침 – 개인정보 보호및 약관 – Google
+                                    - Google Analytics 이용약관 :Terms of Service | GoogleAnalytics – Google
+                                    (2) 쿠키 설정 거부 방법
+                                     고객님은 쿠키 설치에 대한선택권을 가지고 있습니다. 따라서웹브라우저에서 옵션을설정함으로써 모든 쿠키를허용하거나, 쿠키가 저장될 때마다확인을 거치거나, 아니면 모든쿠키의 저장을 거부할 수도있습니다. 단, 고객님께서 쿠키설치를 거부하였을 경우 로그인서비스 제공에 어려움이 있을 수있습니다.
+                                    - 쿠키설정 방법 (마이크로소프트엣지 기준) : 웹브라우저 메뉴[설정 및 기타] (Alt+F)> [설정] >[쿠키 및 사이트권한] > [쿠키 및저장된 데이터] 탭에서 설정하시면됩니다.
+                                    - 쿠키설정 거부 방법
+                                      : 마이크로소프트 엣지 기준 -웹브라우저 메뉴 [설정 및 기타](Alt+F)> [설정] > [쿠키 및사이트권한] > [쿠키 및 저장된데이터] > [쿠키 및 사이트 데이터관리 및 삭제] 탭을 클릭하여[사이트에서 쿠키 데이터를저장하고 읽도록 허용(권장)]을OFF하시면 됩니다.
+                                      : 크롬 기준 - 더보기 메뉴[설정] > [고급] > [개인정보 보호및 보안]에서 [콘텐츠 설정] >[쿠키] 선택하여 [사이트에서 쿠키데이터 저장 및 읽기 허용]을‘사용중지’
+                                    - Google Analytics 차단 브라우저부가 기능(add-on) 설치 : GoogleAnalytics Opt-out BrowserAdd-on Download Page
+                                </p>
+                                <time>2023-06-08</time>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h2 class="h4"><a href="">브랜드 소식</a></h2>
+                    <ul class="stockirlist">
+                        <li>
+                            <a href="">
+                                <p class="tit">캐논코리아, 영화촬영감독의 세계를 알린 ‘촬영의 씬’ 세미나 성료</p>
+                                <p class="txt">“캐논과 영화촬영감독이 만나 선사하는 아주 특별한 경험!”
+                                    캐논코리아, 영화촬영감독의 세계를 알린 ‘촬영의 씬’ 세미나 성료
+                                    - 캐논코리아, <모가디슈>의 최영환, <수리남>의 고락선 감독과 영화촬영감독의 역할 및 촬영 노하우 조명
+                                    - 티켓 오픈 이후 뜨거운 호응 속 선착순 티켓 200장 조기 매진 기록
+                                    - 촬영 현장의 에피소드, 실제 현장 촬영기법 공유로 참석자 99% 이상이 만족한 의미 있는 세미나 성료
+                                    토탈 이미징 솔루션 기업 캐논코리아는 영화촬영감독 최영환, 고락선 감독과 함께 진행한 ‘촬영의 씬’ 세미나를 지난 7월 31일 성료했다고밝혔다.
+                                    캐논코리아는 영상 업계 내 리더십을 공고히 하기 위한 일환으로 영화 감독이나 배우 대비 덜 알려진 영화촬영감독의 역할과 촬영 노하우를조명하고자 ‘촬영의 씬’ 세미나를 기획했다. 이번 세미나는 최영환, 고락선 등 국내 최고의 영화촬영감독이 연사로 참여했으며, 영화유튜버 김시선이 진행을 맡았다. 촬영 관련 세미나가 다수 개최된 바 있지만 영화촬영감독을 주인공으로 기획한 세미나는 거의 최초로서,영화, 영상 전공자 및 영화 촬영에 관심이 높은 미래 크리에이터의 뜨거운 호응 속에 티켓 오픈 이후 200명 좌석이 조기 매진됐다.
+                                    1부 연사로 나선 최영환 촬영감독은 영화 <모가디슈>, <국제시장>, <도둑들> 등 초대형 촬영 현장의 다양한 에피소드를 공유했다. 특히현장의 솔직한 이야기나 예상치 못한 돌발상황에 대처했던 에피소드를 생생하게 전하며 강연의 몰입도를 더했다.
+                                     
+                                    [참고이미지] 영화촬영감독의 세계를 알린 ‘촬영의 씬’ 세미나 현장
+                                     
+                                    2부에는 <수리남>, <택시 운전사>, <역린> 등에 참여한 고락선 촬영감독이 연사로 자리해 실제 현장에서 사용하는 촬영기법들을 공유했다.영화촬영현장에서의 조명 세팅이나 롱테이크 신 등이 기술적으로 어떻게 구현되는지 실무 노하우를 아낌없이 전한 고락선 촬영감독의 강연은참석자들에게 뜻깊은 시간이 됐다.
+                                     
+                                    [참고이미지] 영화촬영감독의 세계를 알린 ‘촬영의 씬’ 세미나 현장
+                                     
+                                    캐논코리아는 이번 세미나에서 영화·영상 분야에 관심 있는 참석자들을 위해 캐논의 영상 및 사진 장비를 자유롭게 만져볼 수 있는 제품체험존을 운영하고, 세미나에 참여한 모두에게 기념품을 증정했다. 또한, 현장에서 럭키드로우 이벤트를 통해 ▲최신 미러리스 카메라 EOSR50 15-45 KIT ▲미니 포토프린터 셀피 QX10 ▲라이프스타일 브랜드 C LOGUE 여행용 멀티 에코 파우치 등 다양한 경품을 제공했다.
+                                     
+                                    영화촬영감독의 생생한 현장 목소리를 들을 수 있었던 ‘촬영의 씬’ 세미나에 대해 참석자들은 높은 만족도를 보였다. 전체 참석자의 약 99%이상이 ‘촬영의 씬’과 유사한 세미나에 “재참여할 의향이 있다”고 답했다. 참석자들은 “평소 존경하던 영화촬영감독님의 이야기를 들을 수있어 매우 만족스러운 시간이었다”, “강연 시간이 짧아서 아쉬웠다. 사전 질문과 강연 시간 모두 두배로 늘리면 좋겠다”, “영화를 7번 이상봤음에도 관람할 때 알지 못했던 현장만의 이야기를 들을 수 있어 좋았다” 등 긍정적인 소감을 전했다.
+                                     
+                                    박정우 캐논코리아 대표이사는 “캐논의 시네마 라인 및 솔루션을 바탕으로 영상 시장에서의 리더십을 확립하는 한편, 상대적으로 정보가부족한 영화 촬영 현장의 목소리를 생생히 전하고자 이번 세미나를 기획했다”며, “캐논코리아는 앞으로도 영상에 특히 관심이 많은 고객층을 대상으로 폭넓은 지식과 가치를 전할 수 있도록 최선을 다하겠다”고 밝혔다.
+                                </p>
+                                <time>2023-08-07</time>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="tit">캐논코리아, 대학생 사진·영상 공모전 ‘2023 미래작가상’ 개최</p>
+                                <p class="txt">“나의 작품을 세상에 알리는 등용문, 신진 작가의 꿈에 도전하세요!”
+                                    캐논코리아, 대학생 사진·영상 공모전 ‘2023 미래작가상’ 개최
+                                    - 8월 21일(월)부터 28일(월)까지 대학생 사진·영상 공모전 ‘2023 미래작가상’ 참가자 모집
+                                    - 1·2차 심사 과정 통해 ▲사진 부문 3명 ▲영상 부문 2명 선정
+                                    - 수상자 대상 ▲캐논 EOS R6 Mark ll 24-105 USM KIT ▲튜터링 ▲전시회 등 특전 제공
+                                    토탈 이미징 솔루션 기업 캐논코리아(대표이사 박정우, kr.canon)가 박건희문화재단과 함께 대학생 사진 공모전 ‘2023 미래작가상’을개최한다.
+                                     
+                                    ‘미래작가상’은 대한민국의 사진 및 영상 분야를 선도할 미래의 사진작가를 발굴하고 육성하는 차세대 작가 양성 프로그램으로,캐논코리아와 박건희문화재단이 공동 주최 및 주관하는 문화 사업이다. 전국 대학생을 대상으로 2007년 처음 공모전을 개최한 이래현재까지 총 62명의 수상자를 배출했으며, 역대 수상자들은 사진, 영상 등 다양한 예술 분야에서 작가로서 활발한 작품 활동을 이어가고있다. 작년부터는 영상 부문까지 규모를 확대해 신진 작가들이 더욱 다양한 작품으로 공모전에 도전할 수 있는 기회를 마련했다.
+                                     
+                                    ‘2023 미래작가상’ 공모전은 휴학생을 포함한 전국 대학생 누구나 전공에 제한 없이 지원 가능하며, 접수 기간은 8월 21일(월)부터 8월28일(월)까지다. 응모는 ▲사진 부문 10점 이내의 사진 작품(JPG 형식) ▲영상 부문 본인이 창작한 영상 작품(유튜브 URL)의 작업 결과물과함께 작업 노트, 재학증명서, 지원서를 이메일(miraeaward2023@gmail.com)로 제출하면 된다. 지원서는 박건희문화재단 홈페이지(wwwgeonhi.com) 게시판에서 다운로드할 수 있다.
+                                     
+                                    1차 심사는 지원자의 제출 자료와 포트폴리오를 토대로 진행한다. 2차 심사 대상자는 개별 공지하며 11x14인치 포트폴리오를 준비해 인터뷰심사에 참석해야 한다. 2차 인터뷰 심사를 마친 후 최종 수상자 5명(사진 부문 3명, 영상 부문 2명)을 선정한다.
+                                     
+                                    이번 ‘2023 미래작가상’에 선정된 5명의 수상자에게는 예비 작가들이 작품을 전시하는 과정까지 다양한 경험을 할 수 있는 기회와 함께특별한 혜택을 제공한다. 먼저, 캐논의 풀프레임 미러리스 카메라 EOS R6 Mark ll 24-105 USM KIT를 부상으로 수여한다. 이와 함께심사위원회에서 추천한 전문가와의 1:1 튜터링 및 오형근 사진가의 마스터 튜터링 기회도 주어진다.
+                                     
+                                    6개월간 튜터링 과정 후에 향상된 실력을 선보이는 전시회도 개최한다. 수상자의 작품을 전시하는 ‘미래작가상 展’은 2024년 4월경캐논갤러리에서 개최 예정이며, 전시회와 함께 작품집도 발간할 계획이다.
+                                     
+                                    심사 결과는 공모 마감 후 캐논코리아 홈페이지 및 박건희문화재단 홈페이지에 공지되며, 2023 미래작가상 관련 자세한 사항은 캐논코리아홈페이지 내 이벤트 페이지(kr.canon/event)에서 확인할 수 있다.
+                                </p>
+                                <time>2023-08-01</time>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p class="tit">크리에이터를 위한 라이프스타일 브랜드 ‘C Logue’, 시즌 오프 프로모션 전개</p>
+                                <p class="txt">“최대 10만원 이상 할인! 여름 휴가철을 맞아 프리미엄·트렌디한 패션 아이템을 제안합니다”
+                                    크리에이터를 위한 라이프스타일 브랜드 ‘C Logue’, 시즌 오프 프로모션 전개
+                                    - 캐논코리아의 라이프스타일 브랜드 ‘C Logue’, 여름 휴가철 맞아 전품목 대상 30% 할인 진행
+                                    - 7월 14일(금)부터 8월 31일(목)까지 ▲캐논 이스토어 ▲캐논플렉스 등에서 프로모션 적용가로 구매 가능
+                                    토탈 이미징 솔루션 기업 캐논코리아(대표이사 박정우, kr.canon)가 오는 8월 31일까지 라이프스타일 브랜드 ‘C Logue’의 시즌 오프프로모션을 전개한다.
+                                     
+                                    캐논코리아의 라이프스타일 브랜드 C Logue는 ‘크리에이티브 로그(Creative Logue)’의 줄임말로, ‘창작자의 이야기’라는 뜻을 담았다. CLogue는 크리에이터들의 꿈을 향한 여정의 동반자로서 언제, 어디서나 생각과 영감을 사진과 영상으로 자유롭게 표현하고, 이를 통해세상을 밝게 비춘다는 브랜드 철학을 담고 있다.
+                                     
+                                    이번 프로모션은 여름 휴가철을 맞아 크리에이터 및 카메라 유저들에게 트렌디한 휴가 패션 아이템을 제안하고자 기획했다. C Logue의▲프리미엄 롱 레인재킷 ▲하이테크 에코 백팩 ▲클라우드 클래식 숄더백 ▲하이테크 에코 벨트백 등 전 품목 대상 30% 가격 할인 혜택을제공한다.
+                                     
+                                    프리미엄 롱 레인재킷은 유니크한 광택감이 있는 워싱코팅소재를 사용해 장마철 스타일리시하게 착용하기 좋고, 패커블 백에 수납이 가능해간편하게 휴대할 수 있다. 하이테크 에코 백팩은 멀티 수납공간으로 기능성을 높이고 지속가능한 소재를 사용한 프리미엄 백팩으로,촬영지나 여행지 등 어디서나 촬영 장비를 안전하고 편리하게 휴대할 수 있다. 클라우드 클래식 숄더백은 카메라의 유려한 곡선을 백의실루엣에 반영한 제품으로, 이너백과 함께 구성해 유틸리티 백으로도 활용도가 높은 아이템이다. 하이테크 에코 벨트백은 가볍고 콤팩트한크로스백 겸 벨트백으로, 활동성 있는 데일리룩을 연출할 수 있다.
+                                     
+                                    오는 8월 31일까지 ▲캐논 이스토어 ▲캐논플렉스 등에서 전개하는 ‘C Logue 시즌 오프 프로모션’ 관련 자세한 사항은 캐논코리아 공식홈페이지에서 확인할 수 있다.
+                                </p>
+                                <time>2023-07-18</time>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- 하단영역 -->
+    <footer>
+        <div class="wrap full">
+            <ul class="fnb">
+                <li><a href="">컨슈머 제품</a></li>
+                <li><a href="">비즈니스 제품</a></li>
+                <li><a href="">라운지</a></li>
+                <li><a href="">제품 구입/지원</a></li>
+                <li><a href="">회사소개</a></li>
+            </ul>
+            <div class="wfub">
+                <h2 class="hide"></h2>
+                <ul class="fub">
+                    <li><a href="">이용약관 </a></li>
+                    <li><a href="">개인정보 처리방침</a></li>
+                    <li><a href="">영상정보처리기기운영관리방침</a></li>
+                </ul>
+                <address> 캐논코리아 (주) 대표자 : 박정우, 혼마토시오 사업자등록번호 : 120-81-15636통신판매 번호 : 강남-01282
+                    <span>주소 : 서울특별시 강남구 테헤란로 607 (삼성동) 복합기 • 카메라 고객상담실 : 1533-3355</span></address>
+                <p class="copyright">Copyright © CANON KOREA All Rights reserved</p>
+                <ul class="sites">
+                    <li>
+                        <img src="img/footer1.png" alt="">
+                        <span>가족친화 우수기업</span>
+                    </li>
+                    <li>
+                        <img src="img/footer2.png" alt="">
+                        <span>소비자 중심 경영</span>
+                    </li>
+                    <li>
+                        <img src="img/footer3.png" alt="">
+                        <span>[인증범위] 캐논코리아 온라인 쇼핑몰 운영 (e스토어, 비즈몰)<br />[유효기간] 2022.10.19 ~ 2025.10.18</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_sitemap">
+                <div class="wrap flex">
+                    <div class="snswrap flex">
+                        <div class="snsbox">
+                            <h3>기업대표/복합기/프린터</h3>
+                            <ul class="flex">
+                                <li>
+                                    <a href="">
+                                        <img src="img/youtube.svg" alt="유튜브아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/facebook.svg" alt="페이스북아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/blog.svg" alt="블로그아이콘">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="snsbox">
+                            <h3>카메라/렌즈</h3>
+                            <ul class="flex">
+                                <li>
+                                    <a href="">
+                                        <img src="img/youtube.svg" alt="유튜브아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/insta.svg" alt="인스타아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/facebook.svg" alt="페이스북아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/blog.svg" alt="블로그아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/post.png" alt="포스트아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/kakao.svg" alt="카카오톡아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/twitter.svg" alt="트위터아이콘">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="familywrap flex">
+                        <div class="select">
+                            <button class="btnselect">Family Site</button>
+                            <ul class="selectlist" style="display: none;">
+                                <li><a href="">Canon Global</a></li>
+                                <li><a href="">Lotte Group</a></li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <button class="btnselect">캐논 관계사 Site</button>
+                            <ul class="selectlist" style="display: none;">
+                                <li><a href="">캐논쎄미콘덕터엔지니어링코<br />리아㈜</a></li>
+                                <li><a href="">캐논메디칼시스템즈코리아</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

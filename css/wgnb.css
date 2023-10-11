@@ -1,0 +1,35 @@
+div.wgnb {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  left: 0;
+  border-top: 1px solid #eee;
+  display: none;
+}
+div.wgnb .wrap{
+  width: 1200px;
+  margin: 0 auto;
+  height: 500px;
+}
+div.wgnb div.center { 
+  justify-content: space-between;
+}
+div.wgnb div.center div.wsub {
+  
+}
+div.wgnb div.center div.wsub h2 {
+  
+}
+div.wgnb div.center div.wsub ul {
+  
+  text-align: left;
+}
+div.wgnb div.center div.wsub ul li {
+  
+}
+div.wgnb div.center div.wsub ul li a {
+  
+  font-size: 15px;
+}

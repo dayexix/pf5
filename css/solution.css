@@ -1,0 +1,75 @@
+#solution {
+  padding: 140px 0 30px;
+}
+#solution .wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+#solution .wrap .solutiontitle {
+  
+}
+#solution .wrap .solutiontitle h2 {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 70px;
+  line-height: 85px;
+  font-weight: 650;
+}
+#solution .wrap .contlist {
+  margin-top: 40px;
+  opacity: 1;
+  display: block;
+  column-count: 3;
+  column-gap: 30px;
+}
+#solution .wrap .contlist .contlist1 {
+  display: inline-block;
+  vertical-align: top;
+  transition-duration: .6s;
+}
+#solution .wrap .contlist .contlist1 .img {
+  
+}
+#solution .wrap .contlist .contlist1 .img a {
+  
+}
+#solution .wrap .contlist .contlist1 .img a img {
+  width: 100%;
+  transition: all 1s ease-in-out;
+  background-size: 100%;
+  background-position: center;
+}
+#solution .wrap .contlist .contlist1 .img a img:hover{
+  transform: scale(1);
+}
+#solution .wrap .contlist .contlist1 .desc {
+  min-height: 192px;
+  margin: 20px 10px;
+}
+#solution .wrap .contlist .contlist1 .desc .txt {
+  
+}
+#solution .wrap .contlist .contlist1 .desc .txt p {
+  
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#solution .wrap .contlist .contlist1 .desc .info {
+  margin: 16px -4px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-weight: 500;
+}
+#solution .wrap .contlist .contlist1 .desc .info a {
+  
+  height: 40px;
+  line-height: 40px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0 20px;
+  box-sizing: content-box;
+}

@@ -1,0 +1,117 @@
+#contents {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+#contents .wrap {
+  margin: 0 auto;
+}
+#contents .wrap div.co {
+  
+}
+#contents .wrap div.co div.text {
+  margin: 110px 0;
+  margin-right: 30px;
+}
+#contents .wrap div.co div.text h2 {
+  color: #dc000c;
+  font-weight: 700;
+}
+#contents .wrap div.co div.text h3 {
+  font-weight: 700;
+  margin-top: 20px;
+}
+#contents .wrap div.co div.text a.morei span{
+  width: 165px;
+  height: 60px;
+  background-color: #dc000c;
+  border-radius: 30px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+#contents .wrap div.co div.text a.morei span::after{
+  content:"";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../img/right.svg);
+  background-size: contain;
+  margin-left: -20px;
+}
+#contents .wrap div.co ul.mo {
+  width: 780px;
+  height: 440px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  background-image: url(../img/m1.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  transition: all 1.5s ease;
+}
+#contents .wrap div.co ul.mo:hover{
+  background-size:110%; 
+}
+#contents .wrap div.co ul.mo li {
+  padding: 80px 0 0 80px;
+}
+#contents .wrap div.co ul.mo li a {
+  color: white;
+}
+#contents .wrap div.co ul.mo li a p {
+  font-size: 18px;
+}
+#contents .wrap div.co ul.mo li a h3 {
+  
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  line-height: 36px;
+}
+#contents .wrap ul.ma {
+  gap: 30px;
+}
+#contents .wrap ul.ma li {
+  width: 380px;
+  height: 380px;
+  display: block;
+  border-radius: 16px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 40px 20px 0 30px;
+  box-sizing: border-box;
+  transition: all 1.5s ease;
+}
+#contents .wrap ul.ma li:hover{  
+  background-size: 110%;
+}
+#contents .wrap ul.ma li a {
+ 
+}
+#contents .wrap ul.ma li:nth-child(1){
+  background-image: url(../img/m2.jpg);
+}
+#contents .wrap ul.ma li:nth-child(2){
+  background-image: url(../img/m3.jpg);
+}
+#contents .wrap ul.ma li:nth-child(3){
+  background-image: url(../img/m4.jpg);
+}
+
+#contents .wrap ul.ma li a p { 
+  font-size: 16px;
+  color: white;
+}
+#contents .wrap ul.ma li a h3 {  
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+#pro {
+  
+}
+#pro .wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+#pro .wrap h2 {
+  
+}
+#pro .wrap div.prolist {
+  
+}
+#pro .wrap div.prolist ul.prod {
+  
+}
+#pro .wrap div.prolist ul.prod li {
+  border-top: 1px solid #e6e6e6;
+}
+#pro .wrap div.prolist ul.prod li:nth-child(1){
+  border-top:none;
+}
+#pro .wrap div.prolist ul.prod li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  align-items: center;
+  width: 100%;
+}
+#pro .wrap div.prolist ul.prod li a h3 {
+  font-weight: bold;
+}
+#pro .wrap div.prolist ul.prod li a p {
+  font-size: 17px;
+  line-height: 26px;
+}
+#pro .wrap div.prolist ul.prod li a p span{
+  
+}
+#pro .wrap div.prolist ul.prod li a figure {
+}
+#pro .wrap div.prolist ul.prod li a figure:hover{
+  
+  background-size: 110%;
+}
+#pro .wrap div.prolist ul.prod li a figure img{
+  
+}

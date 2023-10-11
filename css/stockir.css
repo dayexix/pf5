@@ -1,0 +1,66 @@
+#stockir {
+  
+}
+#stockir .wrap {
+  margin: 0 auto;
+  padding-top: 0;
+}
+#stockir .wrap article {
+  display: flex;
+  padding: 80px 0;
+  border-top: 1px solid #000;
+}
+#stockir .wrap article h2 {
+  margin-right: 40px;
+}
+#stockir .wrap article:nth-child(1) h2{
+  
+  margin-right: 70px;
+}
+#stockir .wrap article h2 a {
+  color: #dc000c;
+  font-weight: bold;
+  margin-right: 40px;
+}
+#stockir .wrap article h2 a::after{
+  content:"";
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #dc000c;
+  border-radius: 50px;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 30px;
+}
+#stockir .wrap article ul.stockirlist {
+  width: calc(100% - 199px);
+  margin-top: -11px;
+}
+#stockir .wrap article ul.stockirlist li {
+ 
+}
+#stockir .wrap article ul.stockirlist li a {
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+#stockir .wrap article ul.stockirlist li a p.tit {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2.5;
+}
+#stockir .wrap article ul.stockirlist li a p.txt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 888px;
+  margin-bottom: 21px;
+  line-height: 2;
+  font-size: 15px;
+}
+#stockir .wrap article ul.stockirlist li a time {
+  
+}
